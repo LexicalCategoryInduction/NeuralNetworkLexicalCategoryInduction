@@ -141,7 +141,7 @@ OUTPUT_WITH_CLASSES_CLUTOPROGRAM_REL_NAME=${OUTPUT_FOLDER_WORDVECTOCLUTO}${OUTPU
 ./cluto-2.1.1/Linux/vcluster -clmethod=agglo -sim=cos -plottree=${FIG_ABS_NAME} -plotformat=ps -rlabelfile=${LABEL_ABS_NAME} -rclassfile=${CLASS_LABEL_ABS_NAME} -showtree ${MATRIX_ABS_NAME} ${NCLUSTER} 2>&1 | tee ${OUTPUT_WITH_CLASSES_CLUTOPROGRAM_REL_NAME}
 
 # run ps2pdf to convert the ps image into a pdf one for acrobat reader
-ps2pdf c ${OUTPUT_FOLDER_WORDVECTOCLUTO}${FIG_NAME_PDF}
+ps2pdf ${OUTPUT_FOLDER_WORDVECTOCLUTO}${FIG_NAME} ${OUTPUT_FOLDER_WORDVECTOCLUTO}${FIG_NAME_PDF}
 
 
 # run tsne reduction
